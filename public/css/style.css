@@ -1,0 +1,32 @@
+body{
+  box-sizing: border-box;
+  margin :0;
+  padding:0;
+  background-color: #84371b;
+}
+.logo{
+  color: aliceblue;
+  
+}
+nav{
+background: rgba(175, 157, 157, 0.25);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+/* border-radius: 10px; */
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+/* background-color: #c78d39; */
+color: #b6b5b4;
+}
+ul{
+  list-style: none;
+  font-size: 1.1em;
+}
+.btn-outline-success{
+  --bs-btn-color: #fdfdfd;
+  --bs-btn-border-color: #ffffff;
+}
+.btn-outline-danger{
+  --bs-btn-color: #fdfdfd;
+  --bs-btn-border-color: #ffffff;
+}
