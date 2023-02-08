@@ -2,8 +2,8 @@
 @section('title','menu cafe')
 @section('content')
     <div class="cover"></div>
-    <nav class= "d-flex justify-content-between ps-5 pe-3">
-        <div class="logo d-flex align-items-center"><h3>coffe</h3></div>
+    <nav class= "d-flex justify-content-between ps-5 pe-3 glass">
+        <div class="logos d-flex align-items-center"><h3>coffe</h3></div>
         {{-- <div class=menu>
             <a href=""><button type="button" class="btn btn-outline-success me-2">Success</button></a>
             <a href=""><button type="button" class="btn btn-outline-danger">Danger</button></a>
