@@ -25,10 +25,8 @@ Route::middleware([
     Route::get('/create', function () {
         return view('/product/create');
     })->name('create');
-    Route::get('register');
+    // Route::get('register');
     
     Route::resource('/product',ProductController::class);
 });
-// @if (Route::has('register'))
-//     <a href="{{ route('register') }}" class="text-white reg">Register</a>
-// @endif
+
