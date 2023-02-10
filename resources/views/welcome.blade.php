@@ -14,10 +14,6 @@
                 <a href="{{ url('/dashboard') }}" class="text-white">Dashboard</a>
             @else
                 <a href="{{ route('login') }}" class="text-white me-3 log ">Log in</a>
-
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="text-white reg">Register</a>
-                @endif
             @endauth
         </div>
     @endif
@@ -30,9 +26,22 @@
         margin-bottom:20px;
         "><img class="midel" src={{asset('image/logo.png')}} alt=""></div>
     </main>
-    <section>
-        <div class="poissent"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque quisquam reprehenderit laudantium explicabo praesentium repellat debitis accusantium, neque voluptas deleniti inventore doloribus. Beatae, aperiam molestiae possimus est iste consequatur!</p></div>
-        <div class="plat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque quisquam reprehenderit laudantium explicabo praesentium repellat debitis accusantium, neque voluptas deleniti inventore doloribus. Beatae, aperiam molestiae possimus est iste consequatur!</div>
+    <section class="row w-100 ">
+        @foreach ($products as $product)
+        <diV class="d-flex justify-content-center col-md-4 me-0">
+            <div class="card mt-3 " style="width: 18rem; ">
+                        <div style="background-image:url({{"image/".$product->image}}); background-position: center;
+                        background-size: cover;
+                            height:200px" >
+                        </div>
+            <div class="card-body">
+              <h5 class="card-title">{{$product->name}}</h5>
+              <p class="card-text">{{$product->prix}}</p>
+              <p class="card-text">{{$product->description}}</p>
+            </div>
+          </div>
+        </div>
+        @endforeach  
     </section>
 
 

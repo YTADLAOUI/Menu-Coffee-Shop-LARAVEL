@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [ProductController::class,'caffe']
-);
-Route::resource('/product',ProductController::class);
 
+Route::get('/', [ProductController::class,'caffe']);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -27,4 +25,10 @@ Route::middleware([
     Route::get('/create', function () {
         return view('/product/create');
     })->name('create');
+    Route::get('register');
+    
+    Route::resource('/product',ProductController::class);
 });
+// @if (Route::has('register'))
+//     <a href="{{ route('register') }}" class="text-white reg">Register</a>
+// @endif

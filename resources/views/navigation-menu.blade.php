@@ -19,6 +19,9 @@
                     <x-jet-nav-link href="{{ route('create') }}" :active="request()->routeIs('create')">
                         {{ __('Create') }}
                     </x-jet-nav-link>
+                    
+                   
+                    
                 </div>
             </div>
 

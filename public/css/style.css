@@ -17,6 +17,7 @@ backdrop-filter: blur( 4px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 /* background-color: #c78d39; */
 color: #b6b5b4;
+min-width: 100%;
 }
 ul{
   list-style: none;
@@ -25,26 +26,6 @@ ul{
 section{
   display: flex;
   justify-content: space-around;
-}
-.poissent{
-  background: rgba( 250, 232, 212, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3px );
-  -webkit-backdrop-filter: blur( 3px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 20px;
-  max-width: 40%;  
-}
-.plat{
-  background: rgba( 250, 232, 212, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3px );
-  -webkit-backdrop-filter: blur( 3px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 20px;
-  max-width: 40%;
 }
 .log,.reg{
   text-decoration: none;
@@ -79,4 +60,15 @@ input{
   border: 1px;
   background-color: #b6b5b4;
   color: aliceblue;
+}
+.glasse{
+
+  background: rgba(252, 223, 193, 0.25);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+  max-width: 75%;  
 }
