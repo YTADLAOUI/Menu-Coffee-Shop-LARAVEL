@@ -70,3 +70,13 @@ section{
 input{
   border-radius: 5px !important;
 }
+.btn-success{
+  background-color: blue !important;
+  width: 20%;
+}
+
+.imagein:hover{
+  border: 1px;
+  background-color: #b6b5b4;
+  color: aliceblue;
+}
