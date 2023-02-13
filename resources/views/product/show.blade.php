@@ -12,10 +12,9 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">{{$prd->name}}</h5>
-    <p class="card-text">{{$prd->prix}}</p>
+    <p class="card-text h6">{{$prd->prix}}</p>
     <p class="card-text">{{$prd->description}}</p>
   </div>
-
   </div>
 </div>
 

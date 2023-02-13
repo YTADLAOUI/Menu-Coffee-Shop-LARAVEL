@@ -56,10 +56,10 @@ input{
   width: 20%;
 }
 
-.imagein:hover{
-  border: 1px;
-  background-color: #b6b5b4;
-  color: aliceblue;
+.imagein{
+ 
+
+
 }
 .glasse{
 
@@ -71,4 +71,14 @@ input{
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 20px;
   max-width: 75%;  
+}
+.cd{
+  background-color: rgb(250, 233, 213);
+} 
+.prix{
+  width: 83px;
+  border-radius: 27px;
+  justify-content: center;
+  display: flex;
+  background: #84371b;
 }

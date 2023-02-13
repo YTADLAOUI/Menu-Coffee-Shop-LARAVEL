@@ -37,9 +37,9 @@
                         background-size: cover;
                             height:200px" >
                         </div>
-            <div class="card-body">
+            <div class="card-body cd">
               <h5 class="card-title">{{$product->name}}</h5>
-              <p class="card-text">{{$product->prix}}</p>
+              <div class="prix"><h6 class="card-text text-white">{{$product->prix." DH"}}</h6></div>
               <p class="card-text">{{$product->description}}</p>
             </div>
           </div>

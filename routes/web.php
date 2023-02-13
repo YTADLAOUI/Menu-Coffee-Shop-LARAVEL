@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,11 +23,14 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard',[ProductController::class,'dahses'])->name('dashboard');
+    Route::post('register',[MemberController::class,'register'])->name('registe');
     Route::get('/create', function () {
         return view('/product/create');
     })->name('create');
-    // Route::get('register');
-    
+    Route::get('/adduser', function () {
+        return view('register');
+    })->name('adduser');
+      Route::get('register');
     Route::resource('/product',ProductController::class);
 });
 
