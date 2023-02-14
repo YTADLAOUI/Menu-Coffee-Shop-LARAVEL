@@ -24,7 +24,7 @@
     
     <div class="mb-3 ">
       <label for="formFile" class="form-label">image:</label>
-      <input class="form-control imagein" name="image" type="file" value="{{$prd->image}}" id="formFile">
+      <input class="form-control imagein" name="image" type="file" value="{{url(asset("image/".$prd->image))}}" id="formFile">
     </div>
     <div class="mb-3">
       <label for="Textarea1" class="form-label">Description</label>

@@ -49,6 +49,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'prix'=>'required',
+            'image'=>'required',
+            'description'=>'required'
+        ]);
         $input = $request->all();
         Product::create($input);
         return redirect('/product')->with('flash_message','Product addedd!');
